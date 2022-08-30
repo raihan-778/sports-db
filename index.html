@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English Premier League</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Let's Explore The Teams of English premier league</h1>
+    </header>
+
+    <section class="container text-center">
+      <div class="mb-3">
+        <input id="search" type="text" placeholder="serach by name" />
+        <button onclick="getInuptValue()" class="btn btn-primary">
+          Search Favourit Player
+        </button>
+      </div>
+      <div id="player-img">
+        <div hidden id="spinner"></div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div id="team-equipment" class="row g-1 row-cols-1 row-cols-md-10">
+          <div hidden id="spinner"></div>
+        </div>
+        <!-- card componenet start -->
+        <div id="card-container" class="row row-cols-1 row-cols-md-3 g-1">
+          <div hidden id="spinner"></div>
+        </div>
+        <!-- card componenet end -->
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
